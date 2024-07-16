@@ -16,15 +16,16 @@
         }
     </style>
 <body>
+    {% include 'navbar.html' %}
     <div class='container'>
     <h1 class='text-center mt-2 mb-4' >Abhi's Gallery</h1>
-    <img class='img-fluid' id='banner' src="static/banner.jpg" width="desktop" height="500" alt="scenary">
+    <img class='img-fluid' id='banner' src="static/logo.jpg" width="desktop" height="500" alt="scenary">
     <h2 class='text-center mt-2 mb-4'>About me</h2>
     <p class='lead'>Hello, I'm Abhi, a passionate photographer with a keen eye for capturing the beauty in everyday moments.
         Through my lens, I strive to tell stories and create visual experiences that resonate with people.
         
     <h2 class='text-center mt-2 mb-4'>Courses</h2>
-    <div>
+    <div
         {% for i in n%}
         {% include 'courses.html' %}
         {% endfor %}
@@ -33,5 +34,6 @@
     <button class="btn btn-outline-success">Contact me</button>
         </div>
     </div>
+    {% include 'footer.html' %}
 </body>
 </html>
