@@ -21,9 +21,15 @@
     <h1 class='text-center mt-2 mb-4' >Abhi's Gallery</h1>
     <img class='img-fluid' id='banner' src="static/logo.jpg" width="desktop" height="500" alt="scenary">
     <h2 class='text-center mt-2 mb-4'>About me</h2>
+    <div class='row' style='margin-bottom:16px'>
+        <div class= 'col-md-6'>
     <p class='lead'>Hello, I'm Abhi, a passionate photographer with a keen eye for capturing the beauty in everyday moments.
-        Through my lens, I strive to tell stories and create visual experiences that resonate with people.
-        
+        Through my lens, I strive to tell stories and create visual experiences that resonate with people.</p>
+        </div>
+        <div class='col-md-6'>
+        <img src="static/studio.jpg" width="600" height="400" style='border-radius:4px' alt="studio">
+        </div>
+    </div>        
     <h2 class='text-center mt-2 mb-4'>Courses</h2>
     <div
         {% for i in n%}
@@ -31,7 +37,7 @@
         {% endfor %}
     </div>
         <div class='text-center'>
-    <button class="btn btn-outline-success">Contact me</button>
+    <a class="btn btn-outline-info" href="mailto:pasariavjtnew@gmail.com?subject=Question%20about%20me&body=My%20name%3A%20%3CYour%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%20%3CYour%20question%20here%3E">Contact me</a>
         </div>
     </div>
     {% include 'footer.html' %}
